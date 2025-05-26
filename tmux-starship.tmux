@@ -1,4 +1,4 @@
-_STARSHIP_PLUGIN_DIR="$(cd "$(dirname "$0")" && pwd)"
-_STARSHIP_HELPER_SCRIPT="${_STARSHIP_PLUGIN_DIR}/scripts/helper.sh"
+#!/usr/bin/env bash
 
-tmux set-option -g @starship_cmd "'${_STARSHIP_HELPER_SCRIPT}'"
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+tmux set-option -g @starship_cmd "'${CURRENT_DIR}/scripts/helper.sh'"
