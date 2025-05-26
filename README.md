@@ -2,6 +2,10 @@
 
 A tmux plugin to display [Starship](https://starship.rs/) prompt in the tmux status bar.
 
+As shown in the image below, the right side of the status bar displays the results for the `starship prompt kubernetes` and the `starship prompt gcloud`.
+
+![](https://share.cleanshot.com/9CDmhRBg5Hy5pZSkRVCV+)
+
 ## Prerequisites
 
 * `starship` installed and accessible in your system's `PATH`
